@@ -112,6 +112,7 @@ function pad(val) {return val > 9 ? val : "0" + val;}
 var turn = 1,
 	numClicks = 0;
 
+// Function that decides what function to run when any given card is clicked
 function cardClick() {
 	var id = this.id,
 		imageSrc = this.name;
@@ -174,6 +175,8 @@ function isMatch(id, imageSrc) {
     } 
 }
 
+//If second selection is not a match, flashes each card in red, flips
+//them back over, and makes them clickable again.
 function nonMatch(id, imageSrc){
 	$("#" + id).attr("src", imageSrc);
 	$("#" + firstId).toggleClass("blueCard").toggleClass("redCard");
@@ -193,6 +196,7 @@ function nonMatch(id, imageSrc){
 
 var starRating = "3 Star";
 
+//Updates the number of moves and star rating in stats line of window.
 function updateStats(noOfClicks){
     $("#noOfMoves").html(noOfClicks + " Moves");
     if ((noOfClicks >= 13) && (noOfClicks < 18)){
