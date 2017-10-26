@@ -1,0 +1,100 @@
+.page{
+  box-shadow: 5px 5px 8px grey;
+  margin: 0 auto;
+  background-color: #0e85a9;
+  align-self: center;
+  border-radius: 10px;
+  height: 650px;
+  max-width: 650px;
+}
+.header{
+  position:relative;
+  text-align: center;
+}
+.mainHeader{
+  text-shadow: 2px 2px 3px darkslategrey;
+  color: black;
+  border-radius: 10px;
+  height: 5%;
+  max-height: 150px;
+}
+.stats{
+  display: inline-block;
+  font-weight: bold;
+  height: 100%;
+  width: 32%;
+}
+
+.star {
+  height: 15px;
+  width: 15px;
+}
+
+.gameBoard{
+  box-shadow: 5px 5px 8px grey;
+  padding: 10px;
+  background-color: black;
+  background-size: cover;
+  border-radius: 10px;
+  height: 90%;
+  max-height: 600px;
+}
+.row{
+  margin: 0 auto;
+  margin-top: 10px;
+  display:flex;
+  border-radius: 10px;
+  width: 90%;
+  height: 18%;
+}
+.resetRow{
+  margin-top: 30px;
+  text-align: center;
+  height: 18%;
+}
+.card{
+  margin: 10px;
+  padding: 5px;
+  margin: 5px auto;
+  width: calc((100% - 100px) / 4);
+  height: calc(100% - 10px);
+  border-radius: 10px;
+}
+
+.blueCard {
+  background-color: #9ff;
+  box-shadow: inset -3px -3px 4px 1px #296767;
+}
+
+.blueCard:hover {
+  box-shadow: inset 3px 3px 4px 1px #296767;
+  cursor: pointer;
+}
+
+.whiteCard {
+  background-color: white;
+  box-shadow: inset 3px 3px 4px 1px lightslategrey;
+}
+
+.redCard {
+  background-color: red;
+  box-shadow: inset 3px 3px 4px 1px #6f0303;  
+}
+
+.reset {
+   height: 65px;
+   width: 150px;
+   background-color: #0e85a9;
+   box-shadow: inset -3px -3px 4px 1px #023544;
+   font-size: 40px;
+   font-weight: bold;
+   padding-top: 10px;
+   margin: auto;
+   border-radius: 10px;
+}
+
+.reset:hover {
+  box-shadow: inset 3px 3px 4px 1px #023544;
+  cursor: pointer;
+}
+

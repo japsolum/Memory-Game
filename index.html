@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <div class ="header">
+        <h1 class="mainHeader">Memory Game</h1>
+        <div class = "subHeader">
+          <div class="stats" id="noOfStars">
+            <img class= "star" src="images/solid_star.svg" id="star1">
+            <img class= "star" src="images/solid_star.svg" id="star2">
+            <img class= "star" src="images/solid_star.svg" id="star3">
+          </div>
+          <div class = "stats" id="noOfMoves" text-align:center;>0 Moves</div>
+          <div class = "stats" id="timer">
+            <label id="minutes">00</label>:<label id="seconds">00</label>
+          </div>
+        </div>
+      </div>
+      <div class="gameBoard" id="gameBoard">
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="new_script.js"></script>
+    </body>
+</html>
